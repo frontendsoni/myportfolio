@@ -1,0 +1,774 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ebebeb;
+}
+
+/* variables start */
+.navbar {
+  --bs-navbar-brand-hover-color: unset !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+/* variables end */
+
+/* Common Css if any start */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Poppins', sans-serif !important;
+  
+}
+
+.row > * {
+  padding: 0 !important;
+}
+
+
+
+/* Common Css if any end */
+
+
+/* Css for hero section start here */
+.hero {
+    background-color: #0A192F;
+    height: 100vh;
+}
+
+.hero .navbar-brand {
+  font-family: 'Kaushan Script', cursive;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 2.5rem;
+}
+
+.hero nav a {
+  text-transform: capitalize;
+  color: #ebebeb;
+  font-size: 1.45rem;
+  letter-spacing: 1.7px;
+  padding: 15px 20px !important;
+  font-weight: 500;
+}
+.hero nav li:last-child a {
+  padding-right: 0 !important;
+}
+.hero nav a:hover {
+  color: #0690EC;
+}
+.hero .navbar-nav .nav-link.active {
+  color: #0690EC;
+}
+
+  /* ham btn css start here */
+.hamBtn {
+  width: 37px;
+  height: 37px;
+  position: relative;
+  overflow: hidden;
+}
+.hamBtn .line {
+  width: 25px;
+  background-color: #ebebeb;
+  height: 3px;
+  position: absolute;
+  right: 5px;
+  transition: all 0.8s;
+}
+.line1 {
+  top: 10px;
+}
+.line2 {
+  top: 17px;
+}
+.line3 {
+  top: 24px;
+}
+.ham .line1 {
+  top: 13px !important;
+  right: 7px !important;
+  transform: rotate(45deg) translateX(4.5px);
+  transition: all 0.8s;
+}
+.ham .line2 {
+  top: 14px !important;
+  right: 1px !important;
+  transform: rotate(139deg) translateX(4px);
+  transition: all 0.8s;
+}
+.ham .line3 {
+  top: -8px !important;
+}
+.main-container {
+  position: relative;
+}
+/* .main-container .navbar-collapse.show {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  transition: none;
+  background-color: #0690EC;
+} */
+  /* ham btn css end here */
+.hero-section {
+  height: 88vh;
+}
+.hero-text>p {
+  font-size: 18.5px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  padding-left: 4px;
+  margin-bottom: 0;
+}
+.hero-text h1 {
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 12px 0;
+}
+.hero-text h1>span {
+  color: #0690EC;
+}
+.hero-text>h2 {
+font-size: 17.5px;
+font-weight: 500;
+letter-spacing: 2px;
+padding-left: 4px;
+}
+.btn-box {
+  margin-top: 50px;
+  padding-left: 4px;
+}
+.button {
+  color: #ebebeb;
+  text-decoration: none;
+  font-size: 15.5px;
+  font-weight: 500;
+  border: 2px solid #0690EC;
+  padding: 4px 16px;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  color: #0690EC;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.btn1 {
+  background-color: #0690EC;
+  color: #ebebeb;
+  margin-right: 20px;
+  
+}
+.btn1:hover {
+  background-color: transparent;
+  color:#0690EC;
+}
+.btn2:hover {
+  background-color: #0690EC;
+  color: #ebebeb;
+}
+
+.hero-row {
+  
+  width: 80%;
+}
+.hero-img {
+  text-align: right;
+}
+.h-image {
+  width: 85%;
+}
+
+/* Css for hero section end here */
+
+/* Css for main section start here */
+main {
+  background-color: #0A192F;
+}
+  /* About section start here */
+  .about-me {
+    padding: 50px 0;
+  }
+  .about-wrapper {
+    width: 80%;
+  }
+  .about-heading {
+    font-size: 18.5px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #0690EC;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 600;
+  }
+  .about-heading::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #0690EC;
+    top: 50%;
+    left: 120px;
+  }
+  .about-text {
+    padding-right: 50px;
+  }
+ .skills {
+  display: flex;
+  justify-content: end;
+ }
+  .about-text p {
+    font-size: 15.5px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  .letsCreate {
+    text-decoration: none;
+    color: #0690EC;
+    letter-spacing: 2px;
+    font-family: Poppins;
+    font-size: 15px;
+  }
+  .skillBoxBlue {
+    position: relative;
+    height: 350px;
+    width: 335px;
+    background-color:#0690EC;
+    border-radius:40px;
+    /* transform: rotate(9.201deg); */
+    transition: transform 0.4s ease;
+}
+  .skillBoxWhite {
+    position: absolute;
+      top: 0px;
+      right: 0px;
+      height: 350px;
+      width: 350px;
+      background-color:#ebebeb;
+      border-radius:40px;
+      /* transform: rotate(351deg); */
+      transition: all 0.4s ease;
+  }
+
+  .skill-container:hover .skillBoxBlue {
+    transform: rotate(9.201deg);
+  }
+  .skill-container:hover .skillBoxWhite {
+    transform: rotate(-9.20deg);
+    right: 25px;
+  }
+  
+  .my-skills {
+    padding: 35px 30px 20px;
+    color: #0A192F;
+    text-transform: capitalize;
+    font-size: 18.5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .my-skills::after {
+      content: "✦";
+      font-size: 24px;
+      margin-left: 5px;
+      color: gold;  
+  }
+  .skills-data ul {
+    padding-left: 40px;
+  }
+ .skills-data ul li {
+  color: #0A192F;
+  list-style: none;
+  font-size: 15.5px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  letter-spacing: 1.5px;
+ }
+
+  /* About section end here */
+  /* My experience section start here */
+  .myExperience {
+    padding-top: 150px;
+  }
+  .experience-heading {
+    font-size: 18.5px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #0690EC;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+    font-weight: 600;
+  }
+  .experience-heading::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #0690EC;
+    top: 50%;
+    left: 175px;
+  }
+  .experience-box{
+    width: 80%;
+    margin: 70px auto !important;
+  }
+  .companies-list{
+    border-left: 2px solid #0690EC;
+    list-style: none;
+    height: 200px;
+    
+  }
+  .companies-list li {
+    font-size: 18.5px;
+    font-family: Pacifico;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  .about-companies {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+  /* My experience section end here */
+  /* My portfolio section start here */
+  .myPortfolio {
+    padding-top: 150px;
+  }
+  .portfolio-heading {
+    font-size: 18.5px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #0690EC;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+    font-weight: 600;
+  }
+  .portfolio-heading::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #0690EC;
+    top: 50%;
+    left: 150px;
+  }
+  .dev-btn {
+    margin-right: 50px;
+    background-color: #0690EC;
+    color: #ebebeb;
+  }
+  .project-box {
+    padding-top: 80px !important;
+  }
+  .project-img-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .project-image {
+    width: 100%;
+    
+  }
+  .project-name {
+    color: #0690EC;
+    letter-spacing: 2px;
+    font-size: 16.5px;
+  }
+  .about-project {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 14px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    line-height: 1.8;
+  }
+  .tech-use span {
+    color: #0690EC;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 15px;
+    font-weight: 500;
+  }
+  .code-demo a  {
+    text-decoration: none;
+    font-size: 14px;
+    color: #0690EC;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+  .code-demo a i {
+    padding-left: 4px;
+  }
+  .projectSecond {
+    padding-top: 120px;
+  }
+  /* My portfolio section end here */
+  /* Contact me section start here */
+  .contactMe {
+    padding-top: 150px;
+  }
+  .contact-heading {
+    color: #0690EC;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  #contactForm input {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid #0690EC;
+    background-color: transparent;
+    padding: 10px;
+  }
+  #contactForm textarea {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid #0690EC;
+    background-color: transparent;
+    padding: 10px;
+  }
+  ::placeholder {
+    color: #5181A1;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .form-btn {
+    background-color: #0690EC;
+    color: #ebebeb;
+    border-radius: 7px;
+  }
+  form div {
+    text-align: center;
+  }
+  .contactInfo {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .contactInfo span {
+    padding: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ebebeb;
+    display: inline-block;
+  }
+  .contactInfo span i {
+    color: #0690EC;
+    font-size: 20px;
+  }
+  .main-box {
+    display: flex;
+    justify-content: center;
+  }
+  /* Contact me section end here */
+  /* copyright section start here */
+  .buyMeCoffee {
+    padding: 100px 0 30px 0;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .copyright>p {
+    font-size: 18px;
+    font-weight: 600;
+    vertical-align: middle;
+    color: #5181A1;
+  }
+  .copyright>p i {
+    font-size: 25px;
+    color: #0690EC;
+  }
+  /* copyright section end here */
+/* Css for main section end here */
+
+/* Responsive Css start here */
+
+ /* Responsive navigation menu start */
+  @media screen and (max-width:767.5px) {
+    .navbar-menu {
+      position: absolute;
+      top: -4px;
+      left: -115px;
+      background-color: #072C63;
+      width: 70vw;
+      height: 100vh;
+      text-align: center;
+      transform: translateX(-101%);
+      transition: transform 1s ease-in-out;
+    }
+    .show-navbar-menu {
+      transform: translateX(0%);
+    }
+    
+  }
+ /* Responsive navigation menu end */
+
+ /* Responsive hero section start */
+ @media screen and (max-width:1199.5px) {
+    .hero-row, .about-wrapper {
+      width: 90%;
+    }
+ }
+ @media screen and (max-width:991.5px) {
+  .hero-row, .about-wrapper {
+    width: 95%;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  }
+ }
+ @media screen and (max-width:767.5px) {
+  .hero-row {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .hero-img {
+      text-align: center;
+  }
+
+  .hero-text {
+    margin-top: 40px !important;
+    padding-left: 60px !important;
+  }
+
+ 
+  .hero-text h1 {
+    margin: 10px 0 15px 0;
+    font-size: 45px;
+    letter-spacing: 2px;
+    line-height: 0.9;
+  }
+  .hero-text>h2 {
+    font-size: 19.5px;
+  }
+  .button {
+    text-decoration: none;
+    font-size: 18.5px;
+    font-weight: 500;
+    border: 2px solid #0690EC;
+    padding: 6px 20px;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    transition: all 0.5s;
+  } 
+  .h-image {
+    width: 75%;
+  }
+ }
+ @media screen and (max-width:575.5px) {
+  .hero-text p {
+    font-size: 16.5px;
+  }
+  .hero-text h1 {
+    margin: 7px 0 15px 0;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    line-height: 0.9;
+  }
+  .hero-text>h2 {
+    font-size: 16.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-left: 4px;
+  }
+  .button {
+    font-size: 14.5px;
+    padding: 4px 12px;
+  }
+  .btn-box {
+    margin-top: 35px;
+  }
+ }
+
+ 
+ /* Responsive hero section end */
+
+ /* Responsive About section start here */
+ @media screen and (min-width:767.5px) and (max-width:991.5px) {
+  .about-text {
+    padding-right: 20px !important;
+  }
+  .skillBoxBlue,.skillBoxWhite { 
+    width: 300px;
+    height: 310px;
+  }
+  .my-skills {
+    padding: 30px 20px 20px;
+  }
+  .skills-data ul {
+    padding-left: 30px;
+  }
+  .about-text p:last-child {
+    margin-bottom: 0;
+  }
+ }
+  @media screen and (max-width:767.5px) {
+    .skillBoxBlue { 
+      transform: rotate(9.201deg);
+    }
+    .skillBoxWhite {
+      right: 24px;
+      transform: rotate(-9.201deg);
+    }
+    .about-wrapper {
+      width: 100%;
+      margin: 0 !important;
+    }
+    .skills {
+      justify-content: center;
+    }
+    .about-text {
+      padding-right: 0px;
+      padding-top: 60px;
+    }
+
+    .about-text p {
+      font-size: 14.5px;
+      letter-spacing: 1.5px;
+    }
+    .about-row {
+      flex-direction: column-reverse;
+    }
+    .about-heading {
+      margin-bottom:80px ;
+     
+    }
+  }
+  @media screen and (max-width:575.5px) {
+    main {
+      padding-left: 7.5px;
+      padding-right: 7.5px;
+    }
+    .skillBoxBlue {
+      height: 280px;
+      width: 270px;
+      
+    }
+    .skillBoxWhite {
+      height: 280px;
+      width: 270px;
+      right: 18px;
+      
+    }
+    .my-skills {
+      padding: 20px 17px 15px;
+    }
+    .skills-data ul {
+      padding-left: 22px;
+    }
+    .skills-data ul li {
+      padding-bottom: 12px;
+    }
+  }
+    /* .about-heading::after {
+      content: none;
+      text-align: center;
+    } */
+    /* .skillBoxBlue {
+      height: 270px;
+      width: 247px;
+      transform: rotate(9.201deg);
+    }
+    .skillBoxWhite {
+      height: 270px;
+      width: 243px;
+      right: 18px;
+      transform: rotate(351deg);
+    }
+    .about-wrapper {
+      width: 100%;
+      margin: 0 !important;
+    }
+    .about-text {
+      padding-right: 0px;
+    }
+    .col-md {
+      padding: 0 !important;
+    }
+    .about-text p {
+      font-size: 14.5px;
+      letter-spacing: 1.5px;
+    }
+    .about-row {
+      flex-direction: column-reverse;
+    }
+    .about-heading {
+      text-align: center;
+      margin-bottom:40px ;
+    }
+    .about-heading::after {
+      content: none;
+      text-align: center;
+    } */
+  
+  
+ /* Responsive About section end here */
+
+ /* Responsive My experience section start here */
+  @media screen and (max-width:767.5px) {
+    .experience-box {
+      width: 100%;
+    }
+  @media screen and (max-width:575.5px) {
+    .myExperience {
+      padding-top: 50px;
+    }
+  }  
+  }
+ /* Responsive My experience section end here */
+
+ /* Responsive My portfolio section start here */
+  @media screen and (max-width:1199.5px) {
+    .project-img-box, .about-project {
+      width: 85%;
+    }
+  }
+  @media screen and (max-width:991.5px) {
+    .project-img-box, .about-project {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width:767.5px) {
+    .space {
+      padding-top: 40px !important;
+    }
+  @media screen and (max-width:575.5px) {
+      .myPortfolio {
+        padding-top: 50px;
+      }
+      .project-box {
+        padding-top: 30px !important;
+      }
+    }
+  }
+ /* Responsive My portfolio section end here */
+
+ /* Responsive contact me section start here */
+ @media screen and (max-width:767.5px) {
+  .main-box {
+    padding-top: 50px;
+  }
+  /* #contactForm input {
+    width: 270px;
+  }
+  #contactForm textarea {
+    width: 270px;
+  } */
+ }
+  
+ /* Responsive contact me section end here */
