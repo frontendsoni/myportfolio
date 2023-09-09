@@ -39,6 +39,7 @@ body {
 .hero {
     background-color: #0A192F;
     height: 100vh;
+    position: relative;
 }
 
 .hero .navbar-brand {
@@ -62,7 +63,7 @@ body {
 .hero nav a:hover {
   color: #0690EC;
 }
-.hero .navbar-nav .nav-link.active {
+.hero .navbar-nav .onactive {
   color: #0690EC;
 }
 
@@ -105,9 +106,13 @@ body {
 .ham .line3 {
   top: -8px !important;
 }
-.main-container {
-  position: relative;
+.navbar-menu .sidebar-ul {
+  display: none !important;
 }
+.design-info {
+  display: none;
+}
+
 /* .main-container .navbar-collapse.show {
   position: absolute;
   right: 0;
@@ -119,7 +124,7 @@ body {
 .hero-section {
   height: 88vh;
 }
-.hero-text>p {
+.hero-text p {
   font-size: 18.5px;
   font-weight: 500;
   letter-spacing: 2.5px;
@@ -136,7 +141,7 @@ body {
 .hero-text h1>span {
   color: #0690EC;
 }
-.hero-text>h2 {
+.hero-text h2 {
 font-size: 17.5px;
 font-weight: 500;
 letter-spacing: 2px;
@@ -498,12 +503,15 @@ main {
 
  /* Responsive navigation menu start */
   @media screen and (max-width:767.5px) {
+    .navbar {
+      position: unset !important;
+    }
     .navbar-menu {
       position: absolute;
-      top: -4px;
-      left: -115px;
+      top: 0;
+      left: 0;
       background-color: #072C63;
-      width: 70vw;
+      width: 350px;
       height: 100vh;
       text-align: center;
       transform: translateX(-101%);
@@ -511,6 +519,42 @@ main {
     }
     .show-navbar-menu {
       transform: translateX(0%);
+    }
+    .navbar-menu .sidebar-ul {
+      display: flex !important;
+    } 
+    .sidebar-img {
+      width: 200px;
+      border-radius: 50%;
+      border: 10px solid #4a76b8;
+    }
+    .sidebar-ul {
+      gap: 20px;
+    }
+    .name {
+      font-size: 18.5px;
+      letter-spacing: 2px;
+    }
+    .hero nav a {
+      font-size: 1.7rem;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      letter-spacing: 2px;
+    }
+    .social-links a i {
+      font-size: 20px;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .design-info {
+        position: fixed;
+        bottom: 5px;
+        display: block;
+        left: 23px;
+    }
+    .design-info p {
+      font-size: 14px;
+      letter-spacing: 1px;
     }
     
   }
@@ -542,7 +586,8 @@ main {
 
   .hero-text {
     margin-top: 40px !important;
-    padding-left: 60px !important;
+    display: flex;
+    justify-content: center;
   }
 
  
@@ -552,7 +597,7 @@ main {
     letter-spacing: 2px;
     line-height: 0.9;
   }
-  .hero-text>h2 {
+  .hero-text h2 {
     font-size: 19.5px;
   }
   .button {
