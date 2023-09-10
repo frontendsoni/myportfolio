@@ -198,7 +198,7 @@ main {
 }
   /* About section start here */
   .about-me {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
   }
   .about-wrapper {
     width: 80%;
@@ -322,7 +322,7 @@ main {
   }
   .experience-box{
     width: 80%;
-    margin: 70px auto !important;
+    margin: 70px auto 0 auto !important;
   }
   .companies-list{
     border-left: 2px solid #0690EC;
@@ -415,6 +415,9 @@ main {
   .projectSecond {
     padding-top: 120px;
   }
+  .portfolio-box {
+    padding-top: 50px;
+  }
   /* My portfolio section end here */
   /* Contact me section start here */
   .contactMe {
@@ -481,7 +484,7 @@ main {
   /* Contact me section end here */
   /* copyright section start here */
   .buyMeCoffee {
-    padding: 100px 0 30px 0;
+    padding: 100px 0 1px 0;
   }
   .copyright {
     text-align: center;
@@ -511,7 +514,7 @@ main {
       top: 0;
       left: 0;
       background-color: #072C63;
-      width: 350px;
+      width: 280px;
       height: 100vh;
       text-align: center;
       transform: translateX(-101%);
@@ -524,12 +527,12 @@ main {
       display: flex !important;
     } 
     .sidebar-img {
-      width: 200px;
+      width: 150px;
       border-radius: 50%;
       border: 10px solid #4a76b8;
     }
     .sidebar-ul {
-      gap: 20px;
+      gap: 15px;
     }
     .name {
       font-size: 18.5px;
@@ -537,8 +540,7 @@ main {
     }
     .hero nav a {
       font-size: 1.7rem;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+      padding: 10px 0 !important;
       letter-spacing: 2px;
     }
     .social-links a i {
@@ -550,7 +552,7 @@ main {
         position: fixed;
         bottom: 5px;
         display: block;
-        left: 23px;
+        left: 35px;
     }
     .design-info p {
       font-size: 14px;
@@ -625,7 +627,7 @@ main {
     letter-spacing: 0.5px;
     line-height: 0.9;
   }
-  .hero-text>h2 {
+  .hero-text h2 {
     font-size: 16.5px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -637,6 +639,30 @@ main {
   }
   .btn-box {
     margin-top: 35px;
+  }
+ }
+ @media screen and (max-width:390px) {
+  .h-image {
+    width: 90%;
+  }
+  .hero-text p {
+    font-size: 16.5px;
+  }
+  .hero-text h1 {
+    margin: 7px 0 15px 0;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    line-height: 0.9;
+  }
+  .hero-text h2 {
+    font-size: 16.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-left: 4px;
+  }
+  .button {
+    font-size: 14.5px;
+    padding: 4px 12px;
   }
  }
 
@@ -720,48 +746,29 @@ main {
       padding-bottom: 12px;
     }
   }
-    /* .about-heading::after {
-      content: none;
-      text-align: center;
-    } */
-    /* .skillBoxBlue {
+  @media screen and (max-width:320px) {
+    .skillBoxBlue {
       height: 270px;
-      width: 247px;
+      width: 230px;
       transform: rotate(9.201deg);
     }
     .skillBoxWhite {
       height: 270px;
-      width: 243px;
-      right: 18px;
-      transform: rotate(351deg);
-    }
-    .about-wrapper {
-      width: 100%;
-      margin: 0 !important;
-    }
-    .about-text {
-      padding-right: 0px;
-    }
-    .col-md {
-      padding: 0 !important;
-    }
-    .about-text p {
-      font-size: 14.5px;
-      letter-spacing: 1.5px;
-    }
-    .about-row {
-      flex-direction: column-reverse;
-    }
-    .about-heading {
-      text-align: center;
-      margin-bottom:40px ;
+      width: 230px;
+      right: 17px !important;
+      transform: rotate(-9.201deg) !important;
     }
     .about-heading::after {
-      content: none;
-      text-align: center;
-    } */
-  
-  
+      width: 80px;
+    }
+    .my-skills {
+      font-size: 16.5px;
+    }
+    .skills-data ul li {
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+  }
  /* Responsive About section end here */
 
  /* Responsive My experience section start here */
@@ -769,11 +776,20 @@ main {
     .experience-box {
       width: 100%;
     }
+  }
   @media screen and (max-width:575.5px) {
     .myExperience {
-      padding-top: 50px;
+      padding-top: 70px;
+    }
+    .companies-list {
+      height: 100px;
+      margin-bottom: 50px;
     }
   }  
+  @media screen and (max-width:375px) {
+    .experience-heading::after {
+      width: 80px;
+    }
   }
  /* Responsive My experience section end here */
 
@@ -792,28 +808,43 @@ main {
     .space {
       padding-top: 40px !important;
     }
+  }  
   @media screen and (max-width:575.5px) {
       .myPortfolio {
-        padding-top: 50px;
+        padding-top: 70px;
       }
       .project-box {
-        padding-top: 30px !important;
+        padding-top: 50px !important;
       }
-    }
+      .portfolio-box {
+        padding-top: 25px;
+      }
   }
  /* Responsive My portfolio section end here */
 
  /* Responsive contact me section start here */
  @media screen and (max-width:767.5px) {
   .main-box {
-    padding-top: 50px;
+    padding-top: 70px;
   }
-  /* #contactForm input {
+  
+ }
+ @media screen and (max-width:375px) {
+   #contactForm input {
     width: 270px;
   }
   #contactForm textarea {
     width: 270px;
-  } */
+  }
+  .dev-btn {
+    margin-right: 20px;
+  }
+  .projectSecond {
+    padding-top: 70px;
+  }
+  .contactMe {
+    padding-top: 100px;
+}
  }
   
  /* Responsive contact me section end here */
