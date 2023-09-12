@@ -388,6 +388,8 @@ main {
   }
   .dev-btn {
     margin-right: 50px;
+  }
+  .change-btn {
     background-color: #0690EC;
     color: #ebebeb;
   }
@@ -439,6 +441,25 @@ main {
   }
   .portfolio-box {
     padding-top: 50px;
+  }
+  .ui-ux-project-box {
+    padding-top: 50px;
+    display: none;
+  }
+  .ui-row {
+    gap: 15px;
+  }
+  .ui-tile {
+    background-color: white;
+  }
+  .tile-box {
+    width: 250px;
+  }
+  .tile-text p {
+    text-align: center;
+    color: #0690EC;
+    font-size: 18.5px;
+    font-weight: 500;
   }
   /* My portfolio section end here */
   /* Contact me section start here */

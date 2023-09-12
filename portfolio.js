@@ -47,6 +47,34 @@ backArrow.addEventListener('click', () => {
     brimmingGraceDesc.style.display = 'none';
     lowestRateDesc.style.display = 'block';
   });
+// Toggling my work
+
+const developementBtn = document.getElementById('devBtn');
+const uiBtn = document.getElementById('uiBtn');
+const devWork = document.getElementById('devWork');
+const uiWork = document.getElementById('uiWork');
+
+function removeActive() {
+  developementBtn.classList.remove('change-btn');
+  uiBtn.classList.remove('change-btn');
+}
+
+developementBtn.addEventListener('click', function (e) {
+  e.preventDefault(); 
+  removeActive();
+  developementBtn.classList.add('change-btn');
+  devWork.style.display = 'block'; 
+  uiWork.style.display = 'none'; 
+});
+
+uiBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  removeActive();
+  uiBtn.classList.add('change-btn');
+  devWork.style.display = 'none';
+  uiWork.style.display = 'block';
+});
+
 
 
   // Fetching data from form and its validations
@@ -107,11 +135,16 @@ contactForm.addEventListener('submit', async (e) => {
 
       if (response.ok) {
         // Form submitted successfully
+        document.getElementById('form-submit-btn').innerText = "Please wait..."
+        setTimeout(()=> {
+          document.getElementById('form-submit-btn').innerText = "Form submitted successfully."
+        }, 2000);
         console.log('Form submitted successfully');
         contactForm.reset();
       } else {
         // Handle the error here
         console.error('Form submission failed');
+        document.getElementById('form-submit-btn').innerText = "Please try again"
       }
     } catch (error) {
       console.error('An error occurred:', error);
