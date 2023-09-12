@@ -243,8 +243,8 @@ main {
   }
   .skillBoxBlue {
     position: relative;
-    height: 350px;
-    width: 335px;
+    height: 320px;
+    width: 320px;
     background-color:#0690EC;
     border-radius:40px;
     /* transform: rotate(9.201deg); */
@@ -254,8 +254,8 @@ main {
     position: absolute;
       top: 0px;
       right: 0px;
-      height: 350px;
-      width: 350px;
+      height: 320px;
+      width: 320px;
       background-color:#ebebeb;
       border-radius:40px;
       /* transform: rotate(351deg); */
@@ -267,7 +267,7 @@ main {
   }
   .skill-container:hover .skillBoxWhite {
     transform: rotate(-9.20deg);
-    right: 25px;
+    right: 20px;
   }
   
   .my-skills {
@@ -301,6 +301,9 @@ main {
   .myExperience {
     padding-top: 150px;
   }
+  #lowestRateDesc {
+    display: none;
+  }
   .experience-heading {
     font-size: 18.5px;
     text-transform: capitalize;
@@ -325,16 +328,35 @@ main {
     margin: 70px auto 0 auto !important;
   }
   .companies-list{
-    border-left: 2px solid #0690EC;
+    border-left: 3px solid #0690EC;
     list-style: none;
-    height: 200px;
-    
+    height: 180px;
+    padding: 0;
   }
   .companies-list li {
     font-size: 18.5px;
     font-family: Pacifico;
-    margin-bottom: 20px;
     letter-spacing: 2px;
+  }
+  .companies-list li a {
+    color: #ebebeb;
+    text-decoration: none;
+    padding: 7px 45px 7px 20px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+  .companies-list li:hover a {
+    background-color: #2c77da;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .active-company {
+    background-color: #2c77da;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .about-companies {
     font-size: 16px;
@@ -431,13 +453,28 @@ main {
     margin-bottom: 30px;
   }
   #contactForm input {
-    margin-bottom: 20px;
+    
     width: 300px;
     height: 35px;
     border-radius: 10px;
     border: 2px solid #0690EC;
-    background-color: transparent;
+    background-color: transparent !important;
     padding: 10px;
+    font-size: 16px;
+    outline: none;
+
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active{
+      -webkit-box-shadow: 0 0 0 30px #0A192F inset !important;
+      caret-color: #ebebeb !important;
+      -webkit-text-fill-color: #ebebeb !important;
+  }
+
+  #contactForm>div {
+    margin-bottom: 20px;
   }
   #contactForm textarea {
     margin-bottom: 20px;
@@ -445,8 +482,10 @@ main {
     height: 150px;
     border-radius: 10px;
     border: 2px solid #0690EC;
-    background-color: transparent;
+    background-color: transparent !important;
     padding: 10px;
+    font-size: 16px;
+    outline: none;
   }
   ::placeholder {
     color: #5181A1;
@@ -481,6 +520,14 @@ main {
     display: flex;
     justify-content: center;
   }
+  .err {
+    font-size: 12.5px;
+    color: crimson;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+  }
   /* Contact me section end here */
   /* copyright section start here */
   .buyMeCoffee {
@@ -514,11 +561,15 @@ main {
       top: 0;
       left: 0;
       background-color: #072C63;
-      width: 280px;
-      height: 100vh;
+      width: 100%;
+      height: 98vh;
       text-align: center;
       transform: translateX(-101%);
       transition: transform 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
     }
     .show-navbar-menu {
       transform: translateX(0%);
@@ -549,14 +600,21 @@ main {
       padding-right: 15px !important;
     }
     .design-info {
-        position: fixed;
-        bottom: 5px;
-        display: block;
-        left: 35px;
+      display: block;
     }
     .design-info p {
       font-size: 14px;
       letter-spacing: 1px;
+    }
+    .cross-arrow-box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: end;
+      width: 100%;
+    }
+    .cross-arrow-box i {
+      font-size: 25px;
+      cursor: pointer;
     }
     
   }
@@ -690,11 +748,11 @@ main {
  }
   @media screen and (max-width:767.5px) {
     .skillBoxBlue { 
-      transform: rotate(9.201deg);
+      transform: rotate(9.201deg) !important;
     }
     .skillBoxWhite {
-      right: 24px;
-      transform: rotate(-9.201deg);
+      right: 20px !important;
+      transform: rotate(-9.201deg) !important ;
     }
     .about-wrapper {
       width: 100%;
