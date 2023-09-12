@@ -53,12 +53,14 @@ backArrow.addEventListener('click', () => {
 
 const contactForm = document.getElementById('contactForm');  
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   let nameValue = e.target.name.value;
   let emailValue = e.target.email.value;
   let messageValue = e.target.message.value;
+
+  // Validation logic here...
 
   if (nameValue == "") {
     document.getElementById('nameerr').innerText = 'Please write your full name.';
@@ -86,15 +88,33 @@ contactForm.addEventListener('submit', (e) => {
   } else {
     document.getElementById('emailerr').innerText = "";
   }
-  
 
-  let data = {
-    name: nameValue,
-    email: emailValue,
-    message: messageValue
+  if (nameValue != "" && emailValue != "") {
+    let data = {
+      name: nameValue,
+      email: emailValue,
+      message: messageValue
+    };
+
+    try {
+      const response = await fetch('https://formspree.io/f/xoqolaor', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        // Form submitted successfully
+        console.log('Form submitted successfully');
+        contactForm.reset();
+      } else {
+        // Handle the error here
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
+    }
   }
-
-  console.log(data);
-
-  contactForm.reset();
-})
+});
