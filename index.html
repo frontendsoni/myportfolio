@@ -1,226 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./portfolio.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-    <title>Gaurav kumar</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-6.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <title>Portfolio Of Gaurav kumar</title>
+
 </head>
 <body>
-    <!-- Header with hero section start -->
-    <section class="hero" id="home">
+
+  <!-- header -->
+  <header class="header"> 
+    <nav class="navbar navbar-expand-md">
       <div class="container">
-        <header>
-          <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container-fluid main-container">
-              <a class="navbar-brand">Gaurav.</a>
-              <button class="navbar-toggler hamBtn" id="ham">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-              </button>
-              <div class="navbar-menu" id="show-nav">
-                
-                <ul class="d-flex align-items-center flex-column ps-0 mt-4 mb-0 sidebar-ul ">
-                  <div class="cross-arrow-box">
-                    <i class="bi bi-arrow-left-short" id="backArrow"></i>
-                  </div>
-                  <img src="./images/profileimage.jpg" alt="profileimage" class="sidebar-img">
-                  <span class="name">Gaurav Kumar</span>
-                  <div class="social-links">
-                    <a href="https://github.com/frontendsoni" class="social-links-item"><i class="bi bi-github"></i></a>
-                    <a href="https://www.linkedin.com/in/frontendsoni/" class="social-links-item"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="social-links-item"><i class="bi bi-discord"></i></a>
-                    <a href="#" class="social-links-item"><i class="bi bi-instagram"></i></a>
-                  </div>
-                </ul>
-                <ul class="navbar-nav  mb-2 mb-lg-0 pt-3">
-                  <li class="nav-item">
-                    <a class="nav-link onactive" aria-current="page" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">about</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#experience">experience</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">portfolio</a>
-                  </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li> -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">contact</a>
-                  </li>
-                </ul>
-                <div class="design-info">
-                  <p > &#169; copyright Gaurav Kumar</p>
+        <div class="logo">
+          <a href="./" class="navbar-brand">Gaurav.</a>
+        </div>
+        <button class="navbar-toggler hamBtn" id="ham">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </button>
+
+        <!-- mobile menu start -->
+        <div class="navbar-menu" id="show-nav">
+
+          <div class="mobile_menu">
+
+            <div class="close_btn">
+              <i class="fas fa-xmark" id="backArrow"></i>
+            </div>
+
+            <div class="profile_img">
+              <img src="assets/images/profile/profileimage.jpg" alt="gaurav kumar portfolio image" >
+            </div>
+            
+            <div class="m-name">Gaurav Kumar</div>
+
+            <div class="social-links">
+              <a href="https://github.com/frontendsoni" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/frontendsoni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+          </div>
+
+          <!-- desktop menu -->
+          <ul class="navbar-nav mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link onactive" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+
+          <!-- mobile menu copyright info -->
+          <div class="design-info">
+            <p > &#169; copyright Gaurav Kumar</p>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section class="hero_sec">
+    <div class="container">
+      <div class="row hero_row">
+        <div class="col-lg-10 mx-lg-auto">
+          <div class="row hero_row1">
+            <div class="col-md-7 hero-text">
+              <div class="hero_content">
+                <p>Hello, i'm</p>
+                <h1>Gaurav <span>Kumar</span></h1>
+                <h2>A Designer and Developer.</h2>
+                <div class="btn_box">
+                  <a href="#contact" class="common_btn primary_btn me-4">Hire Me</a>
+                  <a href="https://github.com/frontendsoni/myportfolio/raw/main/my_updated_resume.pdf" download="Gaurav_resume.pdf" class="common_btn secondary_btn">Download Cv</a>
                 </div>
               </div>
             </div>
-          </nav>
-        </header>
-          <div class="hero-section d-flex align-items-center justify-content-center">
-            <div class="row align-items-center justify-content-center hero-row">
-              <div class="col-md hero-text hero-col">
-                <div class="text-center-box">
-                  <p>Hello, i'm</p>
-                  <h1>Gaurav <span>Kumar</span></h1>
-                  <h2>A Designer and Developer.</h2>
-                  <div class="btn-box">
-                    <a href="#contact" class="button btn1">Hire Me</a>
-                    <a href="https://github.com/frontendsoni/myportfolio/raw/main/my_updated_resume.pdf" download="Gaurav_resume.pdf" class="button btn2">Download Cv</a>
-                  </div>
+            <div class="col-md-5">
+              <img src="assets/images/profile/heroimage.png" alt="frontend developer gaurav kumar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- about section -->
+    <section class="about_sec sec_padding" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-lg-auto">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="about-text">
+                  <h3 class="section_title">About Me</h3>
+                  <p>I’m a Frontend Developer located in Faridabad. I am dedicated to crafting exceptional digital experiences through clean, efficient, and user-friendly interfaces.</p>
+                  <p>Whether I'm working independently or as part of a team, I bring enthusiasm, creativity, and a strong work ethic to every project I undertake.</p>
+                  <p>Well organized person and problem solver. I love swimming, watching animated web series and movies. A family person and husband of a beautiful wife.</p>
+                  <p><a href="#contact" class="lets_create">Let’s create something.</a></p>
                 </div>
               </div>
-              <div class="col-md hero-img">
-                <img src="./images/heroimage.png" alt="hero-img" class="h-image img-fluid">
+              <div class="col-md-6">
+                <div class="skill-container">
+                  <div class="skillBoxBlue">
+                    <div class="skillBoxWhite">
+                      <h3 class="my-skills">key skills</h3>
+                      <div class="skills-data d-flex  justify-content-between">
+                        <ul >
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>Bootstrap</li>
+                          <li>Java Script</li>
+                          <li>React JS</li>
+                        </ul>
+                        <ul>
+                          <li>JQuery</li>
+                          <li>Photoshop</li>
+                          <li>Figma</li>
+                          <li>Git & Github</li>
+                          <li>Scss</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
               </div>
             </div>
-          </div>  
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Header with hero section start -->
 
-    <main>
-    <!-- About me seciton start -->
-    <section class="about-me" id="about">
-      <div class="container">
-        <div class="center d-flex align-items-center justify-content-center">
-          <div class="about-wrapper row align-items-center justify-content-center ">
-            <h3 class="about-heading">about me</h3>
-          <div class="row align-items-center justify-content-center about-row">
-            <div class="col-md">
-              <div class="about-text">
-                <p>I’m a web designer located in Faridabad. I have a serious passion for UI effects, animation and creating intuitive, dynamic user experience.</p>
-                <p>Well organized person and problem solver. I love swimming, watching animated web series and movies. A family person and husband of a beautiful wife.</p>
-                <p>I am currently working on React js, Soon I will upload a project using React Js.</p>
-                <p><a href="#contact" class="letsCreate">Let’s create something.</a></p>
+    <!-- my experience section -->
+  <section class="experience_sec sec_padding" id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-lg-auto">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="section_title">My Experience</h3>
+            </div>
+            <div class="col-md-6">
+              <ul class="companies-list">
+                <li><a href="#" class="company active-company" onclick="showCompanyDesc('description2', event)">AGP Technology Pvt. Ltd.</a></li>
+                <li><a href="#" class="company" onclick="showCompanyDesc('description1', event)">Brimming Grace Capital Pvt. Ltd.</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="company_detail">
+                <div  id="description2" class="company_desc c-active">
+                  <p>At AGPT as a web designer I am responsible to develope responsive websites using HTML, CSS, Bootstrap and
+                    JavaScript.</p>
+                  <p><strong>Working Period</strong>: 10/2023 - Present</p>
+                </div>
+                <div  id="description1" class="company_desc">
+                  <p>At Brimming Grace where I worked as a Web Designer for their new product Chatsense.in and Dialsense.in</p>
+                  <p><strong>Working Period</strong>: 09/2022 - 10/2023</p>
+                </div>
               </div>
             </div>
-            <div class="col-md ">
-              <div class="skill-container skills">
-                <div class="skillBoxBlue">
-                  <div class="skillBoxWhite">
-                    <h3 class="my-skills">key skills</h3>
-                    <div class="skills-data d-flex">
-                      <ul >
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>Java Script</li>
-                        <li>React JS</li>
-                      </ul>
-                      <ul>
-                        <li>JQuery</li>
-                        <li>Photoshop</li>
-                        <li>Figma</li>
-                        <li>Git & GithUb</li>
-                        <li>Scss</li>
-                      </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- projects section -->
+    <section class="project_sec sec_padding" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-lg-auto">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="section_title">My Projects</h3>
+              </div>
+              <div class="col-md-12">
+                <div class="btn_box text-center">
+                  <a href="#" class="common_btn primary_btn me-4 wt-btn"  data-target="devWork">Development</a>
+                  <a href="#" class="common_btn secondary_btn wt-btn" data-target="uiWork">Ui/Ux</a>
+                </div>
+              </div>
+            </div>
+            <div class="project_wrap w-section active" id="devWork">
+              <div class="row align-items-center project_pad">
+                <div class="col-md-6">
+                  <div class="project-img-box">
+                    <img src="assets/images/projects/crystal-limousine.jpg" alt="project1" class="project-image ">
+                  </div>
+                </div>
+                <div class="col-md-6 space">
+                  <div class="project_content text-center">
+                    <h4>Crystal Limousines</h4>
+                    <p>
+                      Crystal Limousines is an limousine service provider company in the Frisco Texas. which provide limousines on rent I design and develope this website for the company.
+                    </p>
+                    <div class="tech-use">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>Bootstrap</span>
+                      <span>JS</span>
+                    </div>
+                    <div class="code-demo">
+                      <a href="https://www.crystallimousinesdfw.com/" target="_blank">
+                        Live Demo 
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- About me seciton end -->
-
-    <!-- My experience section start -->
-    <section class="myExperience" id="experience">
-      <div class="container">
-        <div class="center d-flex justify-content-center align-items-center">
-          <div class="about-wrapper">
-            <h3 class="experience-heading">my experience</h3>
-            <div class="row justify-content-center experience-box">
-              <div class="col-sm">
-                <ul class="companies-list">
-                  <li><a href="#" id="brimmingGraceLink">Brimming Grace</a></li>
-                  <li><a href="#" id="lowestRateLink">Lowestrate.in</a></li>
-                </ul>
-              </div>
-              <div class="col-sm">
-                <p class="about-companies" id="brimmingGraceDesc">Brimming Grace Capital Private Limited is my current company, where I am working as a Web Designer for their new product Chatsense.in and Dialsense.in</p>
-                <p class="about-companies" id="lowestRateDesc">At Lowestrate, where I was working as an HTML developer for their new product.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-
-    <!-- My experience section end -->
-
-    <!-- My portfolio section start -->
-    <section class="myPortfolio" id="portfolio">
-      <div class="container">
-        <div class=" d-flex justify-content-center align-items-center">
-          <div class="about-wrapper">
-            <h3 class="portfolio-heading">my portfolio</h3>
-            <div class="row align-items-center justify-content-center portfolio-box">
-              <div class="btn-box text-center">
-                <a href="#" class="button dev-btn change-btn"  id="devBtn">Development</a>
-                <a href="#" class="button " id="uiBtn">Ui/Ux</a>
-              </div>
-            </div>
-            <div class="project-box" id="devWork">
-              <div class="row align-items-center ">
-                <div class="col-md">
+              <div class="row align-items-center project_pad flex-row-reverse">
+                <div class="col-md-6">
                   <div class="project-img-box">
-                    <img src="./images/theroad.png" alt="project1" class="project-image ">
+                    <img src="assets/images/projects/liz-international.jpg" alt="project2" class="project-image ">
                   </div>
                 </div>
-                <div class="col-md space">
-                  <h4 class="project-name text-center">The Road</h4>
-                  <p class="about-project">
-                    The Road is an beautiful art of a travelling website, which contain travelling packages, feedbacks, forms and many more. Visit the link to explore.
-                  </p>
-                  <div class="tech-use text-center">
-                    <span>HTML</span><span>CSS</span><span>JS</span>
-                  </div>
-                  <div class="code-demo text-center ">
-                    <a href="https://github.com/frontendsoni/theroad/tree/main" class="p-4">Code <i class="bi bi-github" style="color: #0690EC;"></i></a>
-                    <a href="https://frontendsoni.github.io/theroad/Final%20Files/" target="_blank" class="p-4">Live Demo <i class="bi bi-box-arrow-up-right" style="color: #0690EC;"></i></a>
+                <div class="col-md-6 space">
+                  <div class="project_content text-center">
+                    <h4>Liz International Roti House</h4>
+                    <p>
+                      This website is design and developed for Liz International Roti House restaurant, Which is located in Covington Hwy, US.
+                    </p>
+                    <div class="tech-use">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>Bootstrap</span>
+                      <span>JS</span>
+                    </div>
+                    <div class="code-demo">
+                      <a href="https://lizinternationalrotihouse.com/ " target="_blank">
+                        Live Demo 
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="row align-items-center flex-row-reverse projectSecond">
-                <div class="col-md">
+              <div class="row align-items-center project_pad">
+                <div class="col-md-6">
                   <div class="project-img-box">
-                    <img src="./images/chatsense.png" alt="project1" class="project-image ">
+                    <img src="assets/images/projects/nh-home.jpg" alt="project3" class="project-image">
                   </div>
                 </div>
-                <div class="col-md space">
-                  <h4 class="project-name text-center">Chatsense.in</h4>
-                  <p class="about-project">
-                    Chatsense is an online business messaging app. which I design and develope for Brimming Grace company, All the images and designes are created by me.
-                  </p>
-                  <div class="tech-use text-center">
-                    <span>HTML</span><span>CSS</span><span>JS</span>
+                <div class="col-md-6 space">
+                  <div class="project_content text-center">
+                    <h4>NH Home Improvements LLC</h4>
+                    <p>
+                      This website provides home improvements services which include interior, exterior improvements etc.
+                    </p>
+                    <div class="tech-use">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>Bootstrap</span>
+                      <span>JS</span>
+                    </div>
+                    <div class="code-demo">
+                      <a href="https://www.newhampshirehomeimprovementsllc.com/" target="_blank">
+                        Live Demo 
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
                   </div>
-                  <div class="code-demo text-center ">
-                    <a href="https://chatsense.in/" target="_blank" class="p-4">Live Demo <i class="bi bi-box-arrow-up-right" style="color: #0690EC;"></i></a>
+                </div>
+              </div>
+              <div class="row align-items-center project_pad flex-row-reverse">
+                <div class="col-md-6">
+                  <div class="project-img-box">
+                    <img src="assets/images/projects/travelers-inn.jpg" alt="project1" class="project-image ">
+                  </div>
+                </div>
+                <div class="col-md-6 space">
+                  <div class="project_content text-center">
+                    <h4>Travelers Inn</h4>
+                    <p>
+                      Travelers Inn is a hotel website, where you can check room availability, book rooms and enquiry related to the booking. This was my first website in AGPT Technology.
+                    </p>
+                    <div class="tech-use">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>Bootstrap</span>
+                      <span>JS</span>
+                    </div>
+                    <div class="code-demo">
+                      <a href="https://www.travelersinn.ca/" target="_blank">
+                        Live Demo 
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center project_pad">
+                <div class="col-md-6">
+                  <div class="project-img-box">
+                    <img src="assets/images/projects/chatsense.png" alt="project1" class="project-image ">
+                  </div>
+                </div>
+                <div class="col-md-6 space">
+                  <div class="project_content text-center">
+                    <h4>Chatsense.in</h4>
+                    <p>
+                      Chatsense is an online business messaging app. which I design and develope for Brimming Grace company, All the images and designes are created by me.
+                    </p>
+                    <div class="tech-use">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JS</span>
+                    </div>
+                    <div class="code-demo">
+                      <a href="https://chatsense.in/" target="_blank">
+                        Live Demo 
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="ui-ux-project-box" id="uiWork">
-              <div class="row ui-row justify-content-center">
-                <div class="col-md-6 ui-tile d-flex align-items-center justify-content-center flex-column">
-                  <div class="tile-box">
-                    <img src="./images/No data.gif" alt="" class="w-100">
-                  </div>
-                  
-                </div>
+          </div>
+          <div class="row project_pad w-section" id="uiWork">
+            <div class="col-md-6 mx-auto">
+              <div class="tile-box">
+                <img src="assets/images/resources/No-data.gif" alt="" class="w-100">
               </div>
             </div>
           </div>
@@ -228,20 +360,19 @@
       </div>
     </section>
 
-    <!-- My portfolio section end -->
+    <!-- contact section -->
 
-    <!-- Contact me section start -->
-    <section class="contactMe">
+    <section class="contact_sec sec_padding" id="contact">
       <div class="container">
-        <div class="d-flex align-items-center justify-content-center">
-          <div >
+        <div class="row">
+          <div class="col-lg-10 mx-lg-auto">
             <div class="row align-items-center">
-              <div class="col-md">
-                <img src="./images/email.png" alt="email-pic" class="w-100">
+              <div class="col-md-6">
+                <img src="assets/images/resources/email.png" alt="email-pic">
               </div>
-              <div class="col-md">
-                <div class="main-box">
-                  <div>
+              <div class="col-md-6">
+                <div class="align_wrap">
+                  <div class="form_wrap">
                     <h5 class="contact-heading" id="contact">
                       Let's Talk
                     </h5>
@@ -259,34 +390,42 @@
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                         <div id="messageerr" class="err"></div>
                       </div>
-                      <div class="buttonBox"><button type="submit" class="button form-btn" id="form-submit-btn">Submit</button></div>
+                      <div class="buttonBox text-center"><button type="submit" class="common_btn primary_btn" id="form-submit-btn">Submit</button></div>
                     </form>
                   </div>
                 </div>
                 <div class="contactInfo">
-                  <span class="mobileNumber"><i class="bi bi-telephone-fill"></i> +91 8585905590</span>
-                  <span class="address"><i class="bi bi-geo-alt-fill"></i> Faridabad, Haryana</span>
+                  <span class="mobileNumber"><i class="fas fa-phone"></i> +91 8585905590</span>
+                  <span class="address"><i class="fas fa-location-dot"></i> Faridabad, Haryana</span>
                 </div>
               </div>
-            </div>
+            </div>   
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="buy_me_coffee">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            <!-- <p><i class="fa-regular fa-cup-straw"></i> Buy Me Coffee <i class="fa-regular fa-cup-straw"></i></p> -->
+            <p class="copyright-text"> &#169; Design and Develop by GK</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Contact me section end -->
-    <!-- copyright section start here -->
-    <section class="buyMeCoffee">
-      <div class="copyright">
-        <p><i class="bi bi-cup-straw"></i> Buy Me Coffee <i class="bi bi-cup-straw"></i></p>
-        <p class="copyright-text"> &#169; Design and Develop by GK</p>
-      </div>
-    
-    </section>
-    <!-- copyright section end here -->
+    </div>
+  </footer>
 
-    </main>
+  <!--vendor js  -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <script src="./portfolio.js"></script>
-    <script src="./js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="assets/js/custom.js"></script>
+
 </body>
 </html>

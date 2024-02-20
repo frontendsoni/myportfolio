@@ -1,0 +1,185 @@
+@media screen and (max-width:991.5px) {
+  .hero_content p, .hero_content h2 {
+    font-size: 1.65rem;
+    letter-spacing: 1px;
+  }
+  .hero_content h1 {
+    font-size: 3.4rem;
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+  }
+  .common_btn {
+    font-size: 1.45rem;
+    padding: 4px 12px;
+  }  
+}
+@media screen and (max-width:767.5px) {
+  .navbar-menu {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    background-color: #072C63;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transform: translateX(-101%);
+    transition: transform 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  .show-navbar-menu {
+    transform: translateX(0%);
+  }
+  .navbar-menu .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .header .navbar .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+  .close_btn {
+    color: var(--primary-color);
+    font-size: 21px;
+    padding: 15px;
+    text-align: end;
+    cursor: pointer;
+  }
+  .profile_img {
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid #4a76b8;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .m-name {
+    font-size: 18.5px;
+    color: var(--primary-color);
+    margin: 15px 0;
+  }
+  .social-links a i {
+    color: var(--primary-color);
+    font-size: 20px;
+    padding: 15px;
+  }
+  .design-info {
+    display: block;
+    color: var(--primary-color);
+    margin-top: auto;
+    margin-bottom: 10px;
+  }  
+
+  .hero_row1 { 
+    flex-direction: column-reverse;
+  }
+
+  .hero-text {
+    margin-top: 40px !important;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .skill-container {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .about-text p {
+    font-size: 1.4rem;
+  }
+  .skillBoxBlue {
+    transform: rotate(9.201deg);
+  }
+  .skillBoxWhite {
+    right: 20px !important;
+    transform: rotate(-9.201deg) !important;
+  }
+
+  .companies-list {
+    height: unset;
+  }
+  .company_detail {
+    margin-top: 30px;
+  }
+
+  .space {
+    padding-top: 40px;
+  }
+  .project_content p {
+    margin: 15px 0;
+  }
+  .align_wrap {
+    padding-top: 30px;
+  }
+  .buy_me_coffee {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .sec_padding {
+    padding: 30px 0;
+  }
+  main {
+    padding: 0 7.5px;
+  }
+  .skillBoxBlue {
+    height: 270px;
+    width: 260px;
+  }
+  .skillBoxWhite {
+    height: 270px;
+    width: 260px;
+    padding: 20px;
+  }
+  .my-skills {
+    font-size: 1.65rem;
+  }
+  .my-skills::after {
+    font-size: 22px;
+  }
+  .skills-data ul li{
+    font-size: 1.4rem;
+  }
+
+  .btn_box {
+    margin-top: 20px;
+  }
+  .tech-use span {
+    padding: 0 7px;
+  }
+  .companies-list {
+    margin-left: 0px;
+  }
+  .project_pad {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  #contactForm input {
+    width: 270px;
+  }
+  #contactForm textarea {
+    width: 270px;
+  }
+  .section_title::after {
+    width: 80px;
+    margin-left: 15px;
+  }
+  .skillBoxBlue {
+    width: 230px;
+    height: 260px;
+  }
+  .skillBoxWhite{
+    width: 230px;
+    height: 260px;
+    padding: 15px;
+  }
+  .skills-data ul li {
+    font-size: 1.3rem;
+  }
+  .skillBoxWhite {
+    right: 15px !important;
+  } 
+}

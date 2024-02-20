@@ -22,60 +22,55 @@ backArrow.addEventListener('click', () => {
 })
 
 // Toggling companies experience
- const brimmingGraceLink = document.getElementById('brimmingGraceLink');
-  const lowestRateLink = document.getElementById('lowestRateLink');
-  const brimmingGraceDesc = document.getElementById('brimmingGraceDesc');
-  const lowestRateDesc = document.getElementById('lowestRateDesc');
 
-  function clearActive() {
-    brimmingGraceLink.classList.remove('active-company');
-    lowestRateLink.classList.remove('active-company');
-  }
-  
-  brimmingGraceLink.addEventListener('click', function (e) {
-    e.preventDefault(); 
-    clearActive();
-    brimmingGraceLink.classList.add('active-company');
-    brimmingGraceDesc.style.display = 'block'; 
-    lowestRateDesc.style.display = 'none'; 
+function showCompanyDesc(descriptionId, event) {
+  event.preventDefault();
+
+  //remove highlight
+  const highlightedCompany = document.querySelectorAll('.company');
+  highlightedCompany.forEach( item => {
+    item.classList.remove('active-company');
   });
+  //make the current target highlight
+  event.target.classList.add('active-company');
+  // hide all active description
+  const companyDetail = document.querySelectorAll('.company_desc');
+  companyDetail.forEach( companyItem => {
+    companyItem.classList.remove('c-active')
+  })
 
-  lowestRateLink.addEventListener('click', function (e) {
-    e.preventDefault();
-    clearActive();
-    lowestRateLink.classList.add('active-company');
-    brimmingGraceDesc.style.display = 'none';
-    lowestRateDesc.style.display = 'block';
-  });
-// Toggling my work
-
-const developementBtn = document.getElementById('devBtn');
-const uiBtn = document.getElementById('uiBtn');
-const devWork = document.getElementById('devWork');
-const uiWork = document.getElementById('uiWork');
-
-function removeActive() {
-  developementBtn.classList.remove('change-btn');
-  uiBtn.classList.remove('change-btn');
+  //show active description
+  const selectedCompany = document.getElementById(descriptionId);
+  selectedCompany.classList.add('c-active');
 }
 
-developementBtn.addEventListener('click', function (e) {
-  e.preventDefault(); 
-  removeActive();
-  developementBtn.classList.add('change-btn');
-  devWork.style.display = 'block'; 
-  uiWork.style.display = 'none'; 
-});
+// Toggling my work using event delegation method
 
-uiBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  removeActive();
-  uiBtn.classList.add('change-btn');
-  devWork.style.display = 'none';
-  uiWork.style.display = 'block';
-});
+const workToggleBtn = document.querySelectorAll('.wt-btn');
+const workSections = document.querySelectorAll('.w-section');
 
+workToggleBtn.forEach( btn => {
 
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.dataset.target;
+    //console.log('target id is' + ' ' +targetId)
+    toggleWorkSection(targetId);
+    workToggleBtn.forEach(item => item.classList.add('secondary_btn'));
+     e.currentTarget.classList.remove('secondary_btn');
+     e.currentTarget.classList.add('primary_btn');
+  })
+})
+
+const toggleWorkSection = (targetId) => {
+  workSections.forEach(section => {
+    if(section.id == targetId) {
+      section.classList.add('active');
+    } else {
+      section.classList.remove('active');
+    }
+  })
+}
 
   // Fetching data from form and its validations
 
