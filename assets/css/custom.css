@@ -261,7 +261,7 @@ justify-content: end;
   text-transform: capitalize;
   font-size: 1.85rem;
   font-weight: 600;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 .my-skills::after {
     content: "✦";
@@ -270,9 +270,9 @@ justify-content: end;
     color: rgb(255, 215, 0);  
 }
 .skills-data ul li {
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
  }
 
 /* my experience section */
@@ -323,6 +323,14 @@ justify-content: end;
 }
 .btn_box {
   margin-top: 50px;
+}
+.primary_btn.wt-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+.secondary_btn.wt-btn:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
 }
 .project_content {
   font-size: 1.4rem;

@@ -56,7 +56,7 @@ workToggleBtn.forEach( btn => {
     const targetId = e.currentTarget.dataset.target;
     //console.log('target id is' + ' ' +targetId)
     toggleWorkSection(targetId);
-    workToggleBtn.forEach(item => item.classList.add('secondary_btn'));
+     workToggleBtn.forEach(item => item.classList.add('secondary_btn'));
      e.currentTarget.classList.remove('secondary_btn');
      e.currentTarget.classList.add('primary_btn');
   })
