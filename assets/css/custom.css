@@ -390,6 +390,7 @@ justify-content: center;
   background-color: transparent !important;
   padding: 10px;
   outline: none;
+  color: var(--primary-color);
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -412,6 +413,7 @@ input:-webkit-autofill:active{
   background-color: transparent !important;
   padding: 10px;
   outline: none;
+  color: var(--primary-color);
 }
 ::placeholder {
   color: #5181A1;
@@ -437,6 +439,14 @@ input:-webkit-autofill:active{
   padding-left: 5px;
 }
 /* footer */
+.social-links-main {
+  text-align: center;
+}
+.social-links-main i {
+  font-size: 20px;
+  color: var(--tertiory-color);
+  padding: 10px;
+}
 .buy_me_coffee {
   padding-top: 60px;
 }
